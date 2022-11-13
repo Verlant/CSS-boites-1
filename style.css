@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  height: 95vh;
+  width: 95vw;
+  border: 1px solid black;
+  margin: 10px;
+  padding: 20px;
+}
+
+.box {
+  background-color: aquamarine;
+  border: 1px solid black;
+  height: 15%;
+  width: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 960px) {
+  main {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 959px) {
+  .box {
+    width: 100%;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+}
